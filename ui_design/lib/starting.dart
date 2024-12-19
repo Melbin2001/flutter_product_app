@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design/grid.dart';
-import 'package:ui_design/home.dart';
+import 'package:ui_design/login/login.dart';
+import 'package:ui_design/product/view/grid.dart';
 
 class Startingpage extends StatelessWidget {
   const Startingpage({super.key});
@@ -35,41 +35,25 @@ class Startingpage extends StatelessWidget {
             const SizedBox(
               height: 30,
             ),
-            ElevatedButton(
-              onPressed: () { Navigator.of(context).push(MaterialPageRoute(builder: (ctx1) {
-      return Homescreen();
-    }));},
-              style: const ButtonStyle(
-                  minimumSize: WidgetStatePropertyAll(Size(80, 40)),
-                  maximumSize: WidgetStatePropertyAll(Size(200, 40)),
-                  fixedSize: WidgetStatePropertyAll(Size(175, 45)),
-                  backgroundColor: WidgetStatePropertyAll(Colors.pink)),
-              child: const Text(
-                'List View',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18,
-                    fontStyle: FontStyle.italic),
-              ),
-            ),
             const SizedBox(
               height: 2,
             ),
             ElevatedButton(
-              onPressed: () { Navigator.of(context).push(MaterialPageRoute(builder: (ctx1) {
-      return Gridview();
-    }));},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (ctx1) {
+                  return Gridview();
+                }));
+              },
               style: const ButtonStyle(
                   minimumSize: WidgetStatePropertyAll(Size(80, 40)),
                   maximumSize: WidgetStatePropertyAll(Size(200, 40)),
                   fixedSize: WidgetStatePropertyAll(Size(175, 45)),
                   backgroundColor: WidgetStatePropertyAll(
-                      Color.fromARGB(255, 221, 174, 196))),
+                      Color.fromARGB(255, 15, 152, 216))),
               child: const Text(
-                'Grid View',
+                'Get Started',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 34, 34, 34),
+                    color: Color.fromARGB(255, 46, 45, 45),
                     fontWeight: FontWeight.w600,
                     fontSize: 18,
                     fontStyle: FontStyle.italic),
